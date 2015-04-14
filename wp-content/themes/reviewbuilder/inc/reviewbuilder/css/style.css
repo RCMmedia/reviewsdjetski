@@ -1,0 +1,298 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{background:transparent;border:0;margin:0;padding:0;vertical-align:baseline}
+body{line-height:1;background:url() no-repeat;font-family: "Open Sans", sans-serif;}
+h1,h2,h3,h4,h5,h6{clear:both;font-weight:400}
+blockquote{quotes:none}
+blockquote:before,blockquote:after{content:none}
+del{text-decoration:line-through}
+table{border-collapse:collapse;border-spacing:0}
+a img{border:none}
+img{border:0}
+a{text-decoration:none;outline:none;cursor:pointer}
+#wrapper {margin-bottom: 30px}
+
+/* Gravity Forms Reset V2 COMPRESSED */
+.gform_wrapper li.gfield.gfield_error{background-color:transparent!important;border:medium none!important;padding:0!important}
+.gform_wrapper .top_label .gfield_description.validation_message,.gform_wrapper .gfield_description.validation_message{font-size:12px;margin-top:-11px!important;position:absolute!important;padding:10px 0!important}
+div#duplicateEmail{color:#C62626;font-size:10px;margin-left:0!important;margin-top:-7px!important;position:absolute!important;padding:10px 0!important}
+.gform_wrapper .validation_error{color:#790000;font-size:11px;font-weight:bold;line-height:1.5em;margin-bottom:0!important}
+#gforms_confirmation_message{background-color:transparent!important;border:medium none!important;margin:0!important;padding:0!important}
+div.validation_error{display:none}
+li{list-style:none;margin-bottom:15px}
+ul{margin:0;padding:0}
+li.gf_left_half{float:left!important;width: 50%;padding-right: 5px}
+li.gf_right_half{float:right!important;clear:none!important;width: 50%;padding-left: 5px}
+.gform_wrapper ul li.gfield{clear:both}
+input, select, option, textarea {
+  border: medium none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 8px;
+  width: 100%;
+}
+div.ginput_complex span.ginput_full input{width:100%}
+input[type=checkbox]{float:left;}
+
+/* TYPOGRAPHY */
+h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+h2 {color: #fff}
+
+/* MAIN CONTENT */
+#wrapper {width: 100%}
+.header {
+  margin: 0 auto;
+  max-width: 1030px;
+  padding: 10px 0 15px;
+}
+.logo {
+  float: left;
+  max-width: 110px;
+}
+.logo img {width: 100%;height: auto}
+.callus {
+  color: #3e3e3e;
+  font-size: 23px;
+  padding-top: 37px;
+  text-align: right;
+}
+.hero_banner {
+/*   background: rgba(0, 0, 0, 0) url("../images/hero_banner.jpg") no-repeat scroll 0 0 / contain ; */
+  margin: 0 auto;
+  max-width: 1030px;
+  height: 378px;
+}
+.vertically_aligned {
+	position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.hero_banner > img {
+  display: block;
+  height: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+}
+.hero_banner {
+  display: block;
+  height: 378px;
+  margin: 0 auto;
+  max-width: 1030px;
+  position: relative;
+}
+.anchor_btn {
+  background: rgba(0, 0, 0, 0) url("../images/button.png") repeat scroll 0 0;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  margin-bottom: 10px;
+  padding: 8px 20px;
+}
+.reviews_wrap {
+  background: rgba(0, 0, 0, 0) url("../images/review_bg.jpg") no-repeat scroll 0 0;
+  margin: 0 auto;
+  height: 241px;
+  max-width: 1030px;
+}
+.reviews_wrap .vertically_aligned {max-width: 510px;margin: 0 auto;}
+
+/* Begin Star Rating CSS */
+ul.gfield_radio{margin:0!important;padding:0}
+.stars li{display:inline-block;float:left}
+.stars{background:url(../images/stars4.png) repeat-x scroll 0 -5px rgba(0,0,0,0);margin:10px auto;width:260px}
+.stars input[type="radio"]{position:absolute;opacity:0;filter:alpha(opacity=0)}
+.stars input[type="radio"].star-5:checked ~ span{width:100%}
+.stars input[type="radio"].star-4:checked ~ span{width:80%}
+.stars input[type="radio"].star-3:checked ~ span{width:60%}
+.stars input[type="radio"].star-2:checked ~ span{width:40%}
+.stars input[type="radio"].star-1:checked ~ span{width:20%}
+.stars label{display:block;width:52px;height:52px;margin:0!important;padding:0!important;text-indent:-999em;float:left;position:relative;z-index:10;background:transparent!important;cursor:pointer}
+.stars label:hover ~ span{background-position:0 -55px}
+.stars label.star-5:hover ~ span{width:100%!important}
+.stars label.star-4:hover ~ span{width:80%!important}
+.stars label.star-3:hover ~ span{width:60%!important}
+.stars label.star-2:hover ~ span{width:40%!important}
+.stars label.star-1:hover ~ span{width:20%!important}
+.stars span{display:block;width:0;position:relative;top:0;left:0;height:49px;background:url(../images/stars4.png) repeat-x 0 -55px;-webkit-transition:-webkit-width .5s;-moz-transition:-moz-width .5s;-ms-transition:-ms-width .5s;-o-transition:-o-width .5s;transition:width .5s}
+/* END Star Rating CSS */
+
+.cform-wrap{display:none;transition: all 0.3s ease 0s;}
+.review-sites{display:none;transition: all 0.3s ease 0s;color: #fff;}
+.social-icon{background-size:contain!important;display:block;float:left;height:53px;width:33.3333%}
+.social-icon.facebook {background: url("../images/facebook.png") no-repeat center center}
+.social-icon.google {background: url("../images/google-plus.png") no-repeat center center}
+.social-icon.yelp {background: url("../images/yelp.png") no-repeat center center}
+
+.cta {
+  font-size: 14px;
+  line-height: 1.2em;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.cta p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 1.3em;
+}
+.footer {
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  max-width: 1030px;
+}
+.footer > a {
+  color: #2875c5;
+  font-size: 20px;
+  line-height: 1.3em;
+}
+
+/* Form Specific styles */
+textarea {
+  font-family: "Open Sans",sans-serif;
+  height: 140px;
+  width: 100%;
+}
+.gfield_label {
+  display: none;
+}
+.stars_wrap {
+  padding: 10% 0;
+}
+.form_wrap {height: 0;overflow: hidden}
+
+.my_title.cta {
+  color: #fff;
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 10px
+}
+.my_title.cta {
+  color: #fff;
+  font-family: "alexandriaflfregular";
+  font-size: 29px;
+  text-align: center;
+}
+.fadein {height: auto;overflow: visible ;transition: all 0.3s ease 0s;}
+.review_links {height: 0;overflow: hidden}
+.review_links.fadein {
+  height: auto;
+  margin: 10% auto;
+  max-width: 350px;
+}
+.gform_confirmation_message {
+  color: #fff;
+  font-size: 24px;
+}
+/* =Overlay Module
+-------------------------------------------------------------- */
+.switch {display: none;}
+.overlay {
+  background: rgba(16, 37, 56, 0.95) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  transition: all 0.5s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 400;
+}
+.overlay.open {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  visibility: visible;
+  padding-top: 36px;
+}
+.overlay-inner {
+  margin: 30px auto 0;
+  max-width: 630px;
+  padding: 1% 2% 3%;
+  position: relative;
+  text-align: center;
+}
+
+.overlay-inner h2 {color: #000 !important}
+.trigger-overlay.close {
+  display: block;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.trigger-overlay.close span {
+  color: #368cd2;
+  display: inline-block;
+  font-size: 20px !important;
+  text-align: center;
+}
+
+.trigger-overlay.close > img {
+  height: auto;
+  margin-top: -5px;
+  vertical-align: middle;
+  width: 17px;
+}
+a.menu-link {
+  border: 3px solid #000;
+  border-radius: 5px;
+  color: #000;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 5px 10px;
+  transition: all 0.3s ease 0s;
+}
+a.menu-link:hover {background: #A1D3E7;box-shadow: 0px 0px 3px #666;transition: all 0.3s ease 0s;}
+.overlay-title {margin-bottom: 30px;}
+.gform_button.button {
+  background: #368cd2 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  width: auto;
+}
+
+
+
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-device-width: 550px) {
+	.hero_banner {
+	  background: rgba(0, 0, 0, 0) url("http://localhost/reviewsdjetski/wp-content/themes/reviewbuilder/inc/reviewbuilder/images/hero_banner.jpg") repeat scroll center center / cover ;
+	  display: block;
+	  height: 300px !important;
+	  margin: 0 auto;
+	  max-width: 1030px;
+	  position: relative;
+	}
+	li.gf_left_half {
+  	float: none !important;
+  	width: 100%;
+  	padding: 0px;
+	}
+	li.gf_right_half {
+  	float: none !important;
+  	width: 100%;
+  	padding: 0px;
+	}
+	
+}/* end iphone media query */
