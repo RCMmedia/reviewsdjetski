@@ -34,6 +34,7 @@
 				<div><a class="arrow smooth-anchor" href="#"><img src="<?php bloginfo('template_url') ?>/inc/reviewbuilder/images/down_arrow.png" alt="down_arrow" width="35" height="35"></a></div>
 				
 		</div><!-- .vertically_aligned_inner -->
+		
 		<img class="banner" src="<?php bloginfo('template_url') ?>/inc/reviewbuilder/images/hero_banner.jpg" alt="hero_banner" width="1031" height="378">
 	</div><!-- .hero_banner -->
 	<div id="reviewus"></div>
