@@ -153,10 +153,14 @@
     //jQuery("input.gform_hidden" ).val(jQuery("input.star-5").val());
   });
   // tie in submit button to jquery event
-
+	jQuery('.gform_confirmation_message').hide();
 			jQuery(document).bind('gform_confirmation_loaded', function(event, form_id){
 				//jQuery('#ratingsForm').show();
-				jQuery('.cform-wrap .cta').fadeOut();
+				
+				jQuery('.cform-wrap .cta').fadeOut(function() {
+				jQuery('.gform_confirmation_message').toggleClass('active');
+				});
+				//jQuery('.gform_confirmation_message').fadeIn();
 				//jQuery('#form-wrap-coupon1,#form-wrap-coupon2,#ratingsForm').addClass('wide');
 			});
   	
