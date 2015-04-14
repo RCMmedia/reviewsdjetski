@@ -206,8 +206,11 @@ class GFEntryDetail {
 		}
 
 		$mode = empty( $_POST['screen_mode'] ) ? 'view' : $_POST['screen_mode'];
+
+		$min = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG || isset( $_GET['gform_debug'] ) ? '' : '.min';
+
 		?>
-		<link rel="stylesheet" href="<?php echo GFCommon::get_base_url() ?>/css/admin.css" />
+		<link rel="stylesheet" href="<?php echo GFCommon::get_base_url() ?>/css/admin<?php echo $min; ?>.css" />
 		<script type="text/javascript">
 
 			jQuery(document).ready(function () {
