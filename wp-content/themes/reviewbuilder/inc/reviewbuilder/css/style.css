@@ -38,7 +38,7 @@ input, select, option, textarea {
   box-sizing: border-box;
   font-size: 14px;
   padding: 8px;
-  width: 100%;
+  
 }
 div.ginput_complex span.ginput_full input{width:100%}
 input[type=checkbox]{float:left;}
@@ -49,6 +49,7 @@ h1 {
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 25px;
+  padding: 10px;
 }
 h2 {color: #fff}
 
@@ -63,19 +64,19 @@ h2 {color: #fff}
   float: left;
   max-width: 110px;
 }
-.logo img {width: 100%;height: auto}
+.logo img {
+  height: auto;
+  margin: 10px 10px 0;
+  width: 100%;
+}
 .callus {
   color: #3e3e3e;
   font-size: 23px;
+  padding-right: 10px;
   padding-top: 37px;
   text-align: right;
 }
-.hero_banner {
-/*   background: rgba(0, 0, 0, 0) url("../images/hero_banner.jpg") no-repeat scroll 0 0 / contain ; */
-  margin: 0 auto;
-  max-width: 1030px;
-  height: 378px;
-}
+
 .vertically_aligned {
 	position: relative;
   top: 50%;
@@ -94,7 +95,7 @@ h2 {color: #fff}
   display: block;
   height: 378px;
   margin: 0 auto;
-  max-width: 1030px;
+  width: 100%;
   position: relative;
 }
 .anchor_btn {
@@ -107,10 +108,10 @@ h2 {color: #fff}
   padding: 8px 20px;
 }
 .reviews_wrap {
-  background: rgba(0, 0, 0, 0) url("../images/review_bg.jpg") no-repeat scroll 0 0;
-  margin: 0 auto;
+  background: rgba(0, 0, 0, 0) url("../images/review_bg.jpg") no-repeat scroll 0 0 / cover ;
   height: 241px;
-  max-width: 1030px;
+  margin: 0 auto;
+  width: 100%;
 }
 .reviews_wrap .vertically_aligned {max-width: 510px;margin: 0 auto;}
 
@@ -168,6 +169,9 @@ ul.gfield_radio{margin:0!important;padding:0}
 textarea {
   font-family: "Open Sans",sans-serif;
   height: 140px;
+  width: 100%;
+}
+.gfield input {
   width: 100%;
 }
 .gfield_label {
@@ -301,5 +305,28 @@ a.menu-link:hover {background: #A1D3E7;box-shadow: 0px 0px 3px #666;transition: 
   	width: 100%;
   	padding: 0px;
 	}
+	h1 {font-size: 38px;}
 	
 }/* end iphone media query */
+
+@media only screen and (max-device-width: 440px) {
+	.logo {
+  float: left;
+  max-width: 128px;
+}
+.logo img {
+  height: auto;
+  margin: 0px 10px 0;
+  width: 100%;
+  display: block;
+}
+.callus {
+  color: #3e3e3e;
+  float: right;
+  font-size: 23px;
+  padding-top: 0;
+  padding-right: 10px;
+  text-align: right;
+  width: 135px;
+}
+}

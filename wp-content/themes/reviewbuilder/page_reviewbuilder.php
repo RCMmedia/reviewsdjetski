@@ -81,9 +81,9 @@
 					<hr>
 				</div>
 				<div>
-					<a href="#" class="social-icon facebook"></a>
-					<a href="#" class="social-icon google"></a>
-					<a href="#" class="social-icon yelp"></a>
+					<a href="https://www.facebook.com/sdjetski" class="social-icon facebook"></a>
+					<a href="https://plus.google.com/+Sdjetskirentals/about" class="social-icon google"></a>
+					<a href="http://www.yelp.com/biz/san-diego-jet-ski-rentals-san-diego" class="social-icon yelp"></a>
 				</div>
 			</div><!-- .review-sites -->
 		</div>
